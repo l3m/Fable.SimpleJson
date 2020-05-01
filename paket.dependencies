@@ -8,7 +8,9 @@ nuget Fable.Mocha
     nuget Fable.Core
 
 group Build
-  framework >= net45
-  source https://api.nuget.org/v3/index.json
+    framework: netstandard2.0
+    source https://api.nuget.org/v3/index.json
 
-  nuget FAKE ~> 4.64.6
+    nuget Fake.Core.Target
+    nuget Fake.DotNet.Cli
+    nuget Fake.IO.FileSystem
