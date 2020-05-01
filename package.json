@@ -5,7 +5,8 @@
         "start": "webpack-dev-server",
         "pretest": "fable-splitter test -o dist/tests --commonjs",
         "test": "mocha dist/tests",
-        "headless-tests": "webpack-cli --mode production && dotnet run --project ./headless/Headless.fsproj"
+        "headless-tests": "webpack-cli --mode production && dotnet run --project ./headless/Headless.fsproj",
+        "fake-build": "dotnet fake build"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
