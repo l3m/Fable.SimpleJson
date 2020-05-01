@@ -1,0 +1,3 @@
+nuget Fable.Parsimmon
+nuget FSharp.Core
+nuget Fable.Core

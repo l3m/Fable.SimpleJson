@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <Description>A simple library for parsing json strings into structured json data</Description>
@@ -23,8 +24,5 @@
     <ItemGroup>
         <Content Include="*.fsproj; *.fs;" PackagePath="fable\" />
     </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Fable.Core" Version="3.0.0" />
-        <PackageReference Include="Fable.Parsimmon" Version="4.0.0" />
-    </ItemGroup>
+    <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
