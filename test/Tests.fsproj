@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,11 +7,9 @@
     <ProjectReference Include="..\src\Fable.SimpleJson.fsproj" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="paket.references" />
     <Compile Include="Types.fs" />
     <Compile Include="Tests.fs" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Fable.Core" Version="3.0.0" />
-    <PackageReference Include="Fable.Mocha" Version="2.5.0" />
-  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
